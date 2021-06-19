@@ -1,0 +1,368 @@
+.containter{
+    display: flex;
+    flex-direction: column;
+    animation: transitionIn 0.75s;
+}
+#profilImg{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 2em;
+}
+.profil{
+    margin-left: 5em;
+    background-color:rgba(242,243,247,255);
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    margin-top: 0.5em;
+    text-align: center;
+}
+.mobNavBar{
+    display: none;
+}
+body{
+    font-family: 'Poiret One', cursive;
+}
+a{
+    text-decoration-line: none;
+    color: black;
+    font-size: large;
+    margin-top: 0.5em;
+    
+}
+a:hover{
+    text-decoration-line: underline;
+    text-decoration-color:rgb(0, 174, 255) ;
+    text-decoration-thickness: 2px;
+    transition: text-decoration-color 500ms;
+}
+.home{
+    display: flex;
+    /* border: solid 1px black; */
+    /* width: 65%; */
+    justify-content: flex-start;
+    margin-left: 25em;
+}
+.picText{
+    font-size: xx-large;
+    font-weight: bold;
+    /* border: black solid 1px; */
+    align-self: center;
+    /* justify-self: flex-end; */
+    margin-right: 1em;
+    width: 45%;
+
+    animation-name: picText;
+    animation-duration: 1.5s;
+    animation-iteration-count:unset;
+    animation-direction:normal;
+   
+}
+@keyframes picText {
+    from {
+      transform: translate(0px,300px);
+    }
+    to {
+      transform: translate(0px, -50px);
+    }
+  }
+
+
+#download{
+    margin-top: 1em;
+    padding: 1em;
+    background-color: white;
+    border: black solid 1px;
+}
+.mainPic{
+    display: flex;
+    margin-left: 1em;
+}
+#mainPic{
+    width: 80%;
+    height: 600px;
+}
+.space{
+    height: 150px;
+}
+.abaut{
+    margin-left:25em ;
+}
+.abaut p{
+    max-width:90%;
+}
+.umeniq{
+    display: flex;
+    margin-top: 3em;
+    margin-left: 1em;
+    width: 90%;
+    /* border: solid; */
+}
+.Prepodavane,.Youtuber,.Bloger{
+    width: 33%;
+    text-align: center;
+    white-space: normal;
+    border-bottom: solid 1px;
+    padding: 1em;
+}
+.Youtuber,.Bloger{
+    margin-left: 1.5em;
+}
+.Prepodavane{
+    border-color: rgb(0, 174, 255);
+    box-shadow: 5px 10px 8px #888888;
+}
+.Youtuber{
+    border-color: red;
+    box-shadow: 5px 10px 8px #888888;
+}
+.Bloger{
+    border-color: green;
+    box-shadow: 5px 10px 8px #888888;
+}
+#teacher,#youtube,#bloger{
+    width: 70px;
+    justify-self: center;
+    /* box-shadow: 5px 10px 8px #888888; */
+}
+#downloadPic{
+    width: 10px;
+}
+
+/* Delete this if website stop workinkg!!! */
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: translateY(-10px)
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.education{
+    margin-left: 25em;
+   
+}
+.panel{
+    /* border: grey 1px solid; */
+    width: 90%;
+    padding: 0.7em;
+    background-color: rgba(242,243,247,255);
+    margin-bottom: 1em;
+}
+.panel{
+    font-size: x-large;
+    text-transform: uppercase;
+    margin-left:1em;
+    text-decoration-style: none;
+    letter-spacing: 3px;
+}
+.panel a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.panel #plusBakalavar,#plusGimnaziq{
+    float: right;
+    margin-right:1em;
+    font-weight: bolder;
+    font-size:45px;
+    margin-top: -0.2em;
+}
+
+.nonDisplay{
+    margin-left: 1.5em;
+    margin-top:-1em;
+    margin-bottom: 1em;
+    width: 93%;
+    border: solid 1px gainsboro;
+    display: none;
+}
+p{
+    letter-spacing: 2px;
+}
+.revu{
+    display: flex;
+    justify-content: space-evenly;
+    /* position: relative; */
+}
+#imgBlog,#malkiImg,#steniImg{
+    width: 100%;
+    height: 20em;
+    transition: transform .2s;
+}
+#imgBlog:hover,#malkiImg:hover,#steniImg:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2); 
+}
+
+.blog1{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: left;
+    font-size: 9px;
+    font-weight:bold;
+}
+.blogText{
+    font-size: 14px;
+}
+.read{
+    border: gainsboro solid  0.1px;
+    /* height: 20em; */
+    position: absolute;
+    margin-bottom: 40em;
+    width: 65%;
+    margin-top: -30em;
+    background-color: rgba(242,243,247,255);
+    display: none;
+    font-weight: bold;
+}
+#readLess,#readMoreMalkiGolemiNeshta,#readMoreSteni,#moreVideo{
+    cursor: pointer;
+    font-weight: bolder;
+    color:rgb(0, 174, 255) ;
+}
+
+/* #readMoreMalkiGolemiNeshta{
+    color:rgb(0, 174, 255)
+} */
+
+.video{
+    width: 90%;
+    height: 25em;
+}
+.row1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 13em;
+}
+
+.row2{
+    display: none;
+    justify-content: center;
+    margin-bottom: 13em;
+}
+
+#moreVideo{
+    margin-left: 2em;
+}
+.togleNav{
+    display: none;
+}
+.profilM{
+    display: none;
+}
+
+/* MOBILE VERSION */
+@media (max-width: 541px) {
+   .profil{
+       display: none;
+   }
+   .profilM{
+       height: 90%;
+       margin-left: 5em;
+       margin-top:3em;
+       background-color:rgba(242,243,247,255);
+       width: 300px;
+       display: none;
+       align-items: center;
+       flex-direction: column;
+       position: fixed;
+   }
+   .space{
+       height: 50px;
+   }
+   .picText{
+    /* margin-left: -22em; */
+     font-size: large;
+   }
+   .home{
+       display: flex;
+       margin-left:1em;
+   }
+   .mainPic{
+       /* border: solid 1px black; */
+       display: flex;
+   }
+   #mainPic{
+       height: 300px;
+       width: auto;
+   }
+   .abaut{
+     display:flex;
+     flex-direction: column;
+     margin-left: 2em;
+     width: 95%;
+   }
+   .umeniq{
+     display: flex;
+     flex-direction: column;
+     margin:auto;
+   }
+   .Prepodavane,.Youtuber,.Bloger{
+       /* justify-self:center ; */
+       width: 95%;
+       margin-left: -2em;
+   }
+
+.education{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+}
+.panel{
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 1em;
+}
+.nonDisplay{
+    margin-left:0em;
+    margin-top: 0.5em;
+    width: 99%;
+}
+.revu{
+    display: flex;
+    flex-direction: column;
+}
+.blog1{
+    width: 95%;
+    margin-left: 1em;
+    margin-top:1em;
+}
+.blog1 img{
+    min-height: 300px;
+}
+.read{
+    /* max-height: 300px; */
+    min-width: 95%;
+    /* margin-top: -20em; */
+}
+#moreVideo{
+    margin-left:1em
+}
+.togleNav{
+    display: flex;
+}
+#togle{
+    width: 30px;
+    position: fixed;
+    margin-top: 2em;
+    margin-left: 1em;
+}
+#imgBlog,#malkiImg,#steniImg{
+    pointer-events: none;
+}
+}
