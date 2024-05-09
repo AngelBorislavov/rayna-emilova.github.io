@@ -72,5 +72,5 @@ $("#togle").click(function(){
 
 links.addEventListener('click',function(){
   profilM.style.display = "none"
-  console.log("KUR")
+  console.log("hi")
 })
